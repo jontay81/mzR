@@ -151,8 +151,7 @@ setMethod("tic", "mzRpwiz",
               object@backend$getChromatogramsInfo(0L)
           })
 
-setMethod("chromatograms", "mzRpwiz",
-          function(object, chrom) {chromatogram(object, chrom)}
+
 
 
 setMethod("chromatogram", "mzRpwiz",
@@ -182,3 +181,7 @@ setMethod("chromatogram", "mzRpwiz",
               }
               return(ans)
           })
+
+                        
+setMethod("chromatograms", "mzRpwiz",
+          function(object, chrom) {chromatogram(object, chrom)})
