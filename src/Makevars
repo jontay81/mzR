@@ -131,6 +131,9 @@ PWIZ_LDFLAGS=-lpthread
 ## Use the R_HOME indirection to support installations of multiple R version
 PKG_CPPFLAGS=$(PWIZ_CPPFLAGS) $(NC_CFLAGS)  $(ARCH_CPPFLAGS)
 
+#added for compilation errors
+PKG_CXXFLAGS = -std=c++11
+
 PKG_LIBS=$(NC_LIBS)  $(ARCH_LIBS) 
 
 all: clean $(SHLIB)
