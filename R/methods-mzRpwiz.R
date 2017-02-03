@@ -152,7 +152,7 @@ setMethod("tic", "mzRpwiz",
           })
 
 setMethod("chromatograms", "mzRpwiz",
-          function(object, chrom) chromatogram(object, chrom))
+          function(object, chrom) {chromatogram(object, chrom)}
 
 
 setMethod("chromatogram", "mzRpwiz",
